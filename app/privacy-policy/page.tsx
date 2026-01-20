@@ -1,6 +1,6 @@
 import React from "react";
 import type { Metadata } from "next";
-import { Section, SectionHeader } from "@/components/ui/Section";
+import { Section } from "@/components/ui/Section";
 import { Card, CardContent } from "@/components/ui/Card";
 import { schoolConfig } from "@/config/school.config";
 
@@ -33,7 +33,7 @@ export default function PrivacyPolicyPage(): React.ReactElement {
             <CardContent className="p-8 md:p-12 prose prose-lg max-w-none">
               <h2>Introduction</h2>
               <p>
-                {schoolConfig.name} ("we", "our", or "us") is committed to protecting the privacy 
+                {schoolConfig.name} (&ldquo;we&rdquo;, &ldquo;our&rdquo;, or &ldquo;us&rdquo;) is committed to protecting the privacy 
                 and security of personal information. This Privacy Policy explains how we collect, 
                 use, and safeguard information from students, parents, and website visitors.
               </p>
@@ -82,7 +82,7 @@ export default function PrivacyPolicyPage(): React.ReactElement {
                 <li>Educational boards ({schoolConfig.affiliation}) for examination purposes</li>
                 <li>Government authorities when legally required</li>
                 <li>Service providers (transport, medical) as necessary</li>
-                <li>Parents/guardians regarding their child's information</li>
+                <li>Parents/guardians regarding their child&apos;s information</li>
               </ul>
 
               <h2>Data Security</h2>
@@ -112,7 +112,7 @@ export default function PrivacyPolicyPage(): React.ReactElement {
               <h2>Your Rights</h2>
               <p>You have the right to:</p>
               <ul>
-                <li>Access your child's information</li>
+                <li>Access your child&apos;s information</li>
                 <li>Request corrections to inaccurate data</li>
                 <li>Request deletion of data (subject to legal requirements)</li>
                 <li>Opt-out of non-essential communications</li>
@@ -132,9 +132,9 @@ export default function PrivacyPolicyPage(): React.ReactElement {
                 for the privacy practices of these external sites.
               </p>
 
-              <h2>Children's Privacy</h2>
+              <h2>Children&apos;s Privacy</h2>
               <p>
-                We take special care in handling children's information in compliance with 
+                We take special care in handling children&apos;s information in compliance with 
                 applicable laws and regulations regarding child data protection.
               </p>
 

@@ -1,11 +1,7 @@
 import React from "react";
-import { schoolConfig, getFullAddress } from "@/config/school.config";
+import { schoolConfig } from "@/config/school.config";
 
-interface SchemaOrgProps {
-  type?: "website" | "organization" | "educationalOrganization";
-}
-
-export const SchemaOrg: React.FC<SchemaOrgProps> = ({ type = "educationalOrganization" }) => {
+export const SchemaOrg: React.FC = () => {
   const baseUrl = "https://www.example.com"; // Schools should replace with actual domain
 
   const organizationSchema = {

@@ -1,6 +1,6 @@
 import React from "react";
 import type { Metadata } from "next";
-import { Section, SectionHeader } from "@/components/ui/Section";
+import { Section } from "@/components/ui/Section";
 import { Card, CardHeader, CardContent } from "@/components/ui/Card";
 import { schoolConfig, getFullAddress } from "@/config/school.config";
 

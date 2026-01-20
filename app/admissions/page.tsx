@@ -2,7 +2,6 @@ import React from "react";
 import type { Metadata } from "next";
 import { Section, SectionHeader } from "@/components/ui/Section";
 import { Card, CardHeader, CardContent } from "@/components/ui/Card";
-import { Badge } from "@/components/ui/Badge";
 import { Button } from "@/components/ui/Button";
 import { schoolConfig, getPhoneLink, getEmailLink } from "@/config/school.config";
 import { 
@@ -312,7 +311,7 @@ export default function AdmissionsPage(): React.ReactElement {
                   {schoolConfig.contact.email}
                 </a>
                 <p className="text-gray-600 text-sm mt-2">
-                  We'll respond within 24 hours
+                  We&apos;ll respond within 24 hours
                 </p>
               </CardContent>
             </Card>
