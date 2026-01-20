@@ -15,8 +15,8 @@ export const Card: React.FC<CardProps> = ({
   return (
     <div
       className={cn(
-        "bg-white rounded-xl shadow-md overflow-hidden",
-        hover && "transition-all duration-300 hover:shadow-xl hover:-translate-y-1",
+        "bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-100",
+        hover && "transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 hover:border-indigo-200",
         className
       )}
     >
@@ -35,7 +35,7 @@ export const CardHeader: React.FC<CardHeaderProps> = ({
   className 
 }) => {
   return (
-    <div className={cn("p-6 border-b border-gray-100", className)}>
+    <div className={cn("p-6 border-b border-gray-100 bg-gradient-to-r from-gray-50 to-white", className)}>
       {children}
     </div>
   );
@@ -67,7 +67,7 @@ export const CardFooter: React.FC<CardFooterProps> = ({
   className 
 }) => {
   return (
-    <div className={cn("p-6 border-t border-gray-100 bg-gray-50", className)}>
+    <div className={cn("p-6 border-t border-gray-100 bg-gradient-to-r from-gray-50 to-white", className)}>
       {children}
     </div>
   );

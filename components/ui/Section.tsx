@@ -16,8 +16,8 @@ export const Section: React.FC<SectionProps> = ({
 }) => {
   const backgrounds = {
     white: "bg-white",
-    gray: "bg-gray-50",
-    blue: "bg-blue-50",
+    gray: "bg-gradient-to-br from-gray-50 to-white",
+    blue: "bg-gradient-to-br from-indigo-50 via-purple-50 to-pink-50",
   };
 
   return (
@@ -53,16 +53,16 @@ export const SectionHeader: React.FC<SectionHeaderProps> = ({
         className
       )}
     >
-      <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
+      <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 bg-clip-text text-transparent mb-4">
         {title}
       </h2>
       {subtitle && (
-        <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
+        <p className="text-lg md:text-xl text-gray-700 max-w-3xl mx-auto font-medium">
           {subtitle}
         </p>
       )}
       <div className={cn(
-        "h-1 w-20 bg-gradient-to-r from-blue-600 to-orange-500 mt-6",
+        "h-1.5 w-24 bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 rounded-full mt-6",
         centered ? "mx-auto" : ""
       )} />
     </div>

@@ -27,22 +27,26 @@ export const Highlights: React.FC = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {schoolConfig.highlights.map((highlight, index) => {
             const IconComponent = highlight.icon ? iconMap[highlight.icon] : Award;
+            const gradients = [
+              "from-indigo-500 to-purple-600",
+              "from-orange-500 to-pink-600",
+              "from-cyan-500 to-blue-600",
+              "from-yellow-400 to-orange-500",
+            ];
+            const gradient = gradients[index % gradients.length];
             
             return (
               <div
                 key={index}
-                className="bg-white rounded-xl shadow-lg p-6 text-center transform hover:-translate-y-2 transition-all duration-300 border border-gray-100"
+                className="bg-white rounded-2xl shadow-lg p-6 text-center transform hover:-translate-y-3 transition-all duration-300 border border-gray-100 hover:border-indigo-200 hover:shadow-2xl group"
               >
-                <IconBox
-                  icon={<IconComponent size={28} />}
-                  size="lg"
-                  variant={index % 2 === 0 ? "primary" : "secondary"}
-                  className="mx-auto mb-4"
-                />
-                <div className="text-4xl font-bold text-gray-900 mb-2">
+                <div className={`inline-flex p-4 rounded-2xl bg-gradient-to-br ${gradient} mb-4 shadow-lg group-hover:scale-110 transition-transform duration-300`}>
+                  <IconComponent size={28} className="text-white" />
+                </div>
+                <div className="text-4xl font-bold bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent mb-2">
                   {highlight.value}
                 </div>
-                <div className="text-gray-600 font-semibold">
+                <div className="text-gray-700 font-bold">
                   {highlight.title}
                 </div>
               </div>

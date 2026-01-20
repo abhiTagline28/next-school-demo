@@ -14,13 +14,13 @@ export const Button: React.FC<ButtonProps> = ({
   children,
   ...props
 }) => {
-  const baseStyles = "font-semibold rounded-lg transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed";
+  const baseStyles = "font-bold rounded-xl transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed relative overflow-hidden group shadow-lg hover:shadow-xl";
   
   const variants = {
-    primary: "bg-blue-600 text-white hover:bg-blue-700 focus:ring-blue-500",
-    secondary: "bg-orange-500 text-white hover:bg-orange-600 focus:ring-orange-500",
-    outline: "border-2 border-blue-600 text-blue-600 hover:bg-blue-50 focus:ring-blue-500",
-    ghost: "text-blue-600 hover:bg-blue-50 focus:ring-blue-500",
+    primary: "bg-gradient-to-r from-indigo-600 to-purple-600 text-white hover:from-indigo-700 hover:to-purple-700 focus:ring-indigo-500 hover:scale-105",
+    secondary: "bg-gradient-to-r from-orange-500 to-pink-500 text-white hover:from-orange-600 hover:to-pink-600 focus:ring-orange-500 hover:scale-105",
+    outline: "border-2 border-indigo-600 text-indigo-600 hover:bg-gradient-to-r hover:from-indigo-50 hover:to-purple-50 focus:ring-indigo-500 hover:scale-105 bg-white",
+    ghost: "text-indigo-600 hover:bg-gradient-to-r hover:from-indigo-50 hover:to-purple-50 focus:ring-indigo-500 hover:scale-105",
   };
   
   const sizes = {
@@ -34,7 +34,12 @@ export const Button: React.FC<ButtonProps> = ({
       className={cn(baseStyles, variants[variant], sizes[size], className)}
       {...props}
     >
-      {children}
+      <span className="relative z-10 flex items-center justify-center">
+        {children}
+      </span>
+      {(variant === "primary" || variant === "secondary") && (
+        <span className="absolute inset-0 bg-white/20 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
+      )}
     </button>
   );
 };
