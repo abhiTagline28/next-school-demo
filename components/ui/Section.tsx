@@ -53,11 +53,11 @@ export const SectionHeader: React.FC<SectionHeaderProps> = ({
         className
       )}
     >
-      <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 bg-clip-text text-transparent mb-4">
+      <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 bg-clip-text text-transparent mb-4">
         {title}
       </h2>
       {subtitle && (
-        <p className="text-lg md:text-xl text-gray-700 max-w-3xl mx-auto font-medium">
+        <p className="text-xl md:text-2xl text-gray-700 max-w-3xl mx-auto font-medium">
           {subtitle}
         </p>
       )}

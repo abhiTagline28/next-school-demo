@@ -59,16 +59,16 @@ export const Footer: React.FC = () => {
               <h3 className="text-2xl font-bold bg-gradient-to-r from-yellow-400 via-orange-400 to-pink-400 bg-clip-text text-transparent mb-2">
                 {schoolConfig.name}
               </h3>
-              <p className="text-yellow-300 font-semibold text-sm">
+              <p className="text-yellow-300 font-semibold text-base">
                 {schoolConfig.tagline}
               </p>
             </div>
-            <p className="text-sm leading-relaxed mb-4 text-gray-300">
+            <p className="text-base leading-relaxed mb-4 text-gray-300">
               Established in {schoolConfig.established}, we are committed to providing 
               quality education and nurturing young minds to become responsible citizens.
             </p>
-            <div className="flex items-center gap-2 text-sm">
-              <span className="bg-gradient-to-r from-indigo-600 to-purple-600 text-white px-4 py-1.5 rounded-full font-bold shadow-lg">
+            <div className="flex items-center gap-2 text-base">
+              <span className="bg-gradient-to-r from-indigo-600 to-purple-600 text-white px-5 py-2 rounded-full font-bold shadow-lg text-base">
                 {schoolConfig.affiliation}
               </span>
               <span className="text-gray-400 font-medium">
@@ -79,7 +79,7 @@ export const Footer: React.FC = () => {
 
           {/* Quick Links */}
           <div>
-            <h4 className="text-lg font-bold text-white mb-6 relative">
+            <h4 className="text-xl font-bold text-white mb-6 relative">
               <span className="relative z-10">Quick Links</span>
               <span className="absolute bottom-0 left-0 w-12 h-0.5 bg-gradient-to-r from-yellow-400 to-orange-500"></span>
             </h4>
@@ -100,7 +100,7 @@ export const Footer: React.FC = () => {
 
           {/* Important Links */}
           <div>
-            <h4 className="text-lg font-bold text-white mb-6 relative">
+            <h4 className="text-xl font-bold text-white mb-6 relative">
               <span className="relative z-10">Important Links</span>
               <span className="absolute bottom-0 left-0 w-12 h-0.5 bg-gradient-to-r from-yellow-400 to-orange-500"></span>
             </h4>
@@ -121,7 +121,7 @@ export const Footer: React.FC = () => {
 
           {/* Contact Info */}
           <div>
-            <h4 className="text-lg font-bold text-white mb-6 relative">
+            <h4 className="text-xl font-bold text-white mb-6 relative">
               <span className="relative z-10">Contact Us</span>
               <span className="absolute bottom-0 left-0 w-12 h-0.5 bg-gradient-to-r from-yellow-400 to-orange-500"></span>
             </h4>
@@ -134,7 +134,7 @@ export const Footer: React.FC = () => {
                   className="flex items-start gap-3 text-gray-300 hover:text-yellow-400 transition-all duration-200 group"
                 >
                   <MapPin size={20} className="mt-1 flex-shrink-0 text-yellow-400 group-hover:scale-110 transition-transform" />
-                  <span className="text-sm group-hover:translate-x-1 transition-transform">{getFullAddress()}</span>
+                  <span className="text-base group-hover:translate-x-1 transition-transform">{getFullAddress()}</span>
                 </a>
               </li>
               <li>
@@ -143,7 +143,7 @@ export const Footer: React.FC = () => {
                   className="flex items-center gap-3 text-gray-300 hover:text-yellow-400 transition-all duration-200 group"
                 >
                   <Phone size={20} className="flex-shrink-0 text-yellow-400 group-hover:scale-110 transition-transform" />
-                  <span className="text-sm group-hover:translate-x-1 transition-transform font-medium">{schoolConfig.contact.phone}</span>
+                  <span className="text-base group-hover:translate-x-1 transition-transform font-medium">{schoolConfig.contact.phone}</span>
                 </a>
               </li>
               <li>
@@ -152,14 +152,14 @@ export const Footer: React.FC = () => {
                   className="flex items-center gap-3 text-gray-300 hover:text-yellow-400 transition-all duration-200 group"
                 >
                   <Mail size={20} className="flex-shrink-0 text-yellow-400 group-hover:scale-110 transition-transform" />
-                  <span className="text-sm break-all group-hover:translate-x-1 transition-transform font-medium">{schoolConfig.contact.email}</span>
+                  <span className="text-base break-all group-hover:translate-x-1 transition-transform font-medium">{schoolConfig.contact.email}</span>
                 </a>
               </li>
             </ul>
 
             {/* Social Media */}
             <div className="mt-6">
-              <h5 className="text-sm font-semibold text-white mb-3">Follow Us</h5>
+              <h5 className="text-base font-semibold text-white mb-3">Follow Us</h5>
               <div className="flex items-center gap-3">
                 {schoolConfig.social.facebook && (
                   <a
@@ -219,10 +219,10 @@ export const Footer: React.FC = () => {
       <div className="border-t border-gray-700/50 relative z-10">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-6">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-            <p className="text-sm text-gray-400 text-center md:text-left">
+            <p className="text-base text-gray-400 text-center md:text-left">
               © {currentYear} {schoolConfig.name}. All rights reserved.
             </p>
-            <p className="text-sm text-gray-400">
+            <p className="text-base text-gray-400">
               Designed with <span className="text-red-400">❤️</span> for quality education
             </p>
           </div>

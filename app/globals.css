@@ -102,15 +102,33 @@ iframe {
   height: auto;
 }
 
+html {
+  font-size: 18px; /* Increased from default 16px */
+}
+
 body {
   background: linear-gradient(to bottom, #f8fafc 0%, #ffffff 100%);
   background-attachment: fixed;
   color: var(--foreground);
   font-family: var(--font-inter), system-ui, -apple-system, sans-serif;
+  font-size: 1rem; /* 18px base */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
-  line-height: 1.6;
+  line-height: 1.7; /* Increased from 1.6 */
+}
+
+/* Responsive font scaling */
+@media (min-width: 768px) {
+  html {
+    font-size: 19px;
+  }
+}
+
+@media (min-width: 1024px) {
+  html {
+    font-size: 20px;
+  }
 }
 
 /* Modern Scrollbar */

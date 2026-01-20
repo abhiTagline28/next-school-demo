@@ -54,7 +54,7 @@ export default function RootLayout({
       <head>
         <SchemaOrg />
       </head>
-      <body className="font-sans antialiased text-gray-900">
+      <body className="font-sans antialiased text-gray-900 text-lg">
         <div className="fixed inset-0 -z-10 bg-gradient-to-br from-blue-50 via-white to-purple-50"></div>
         <Header />
         <main className="min-h-screen relative">

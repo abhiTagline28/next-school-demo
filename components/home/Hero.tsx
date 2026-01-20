@@ -32,7 +32,7 @@ export const Hero: React.FC = () => {
           <div>
             {/* Badge */}
             {schoolConfig.admissions.isOpen && (
-              <div className="inline-flex items-center gap-2 bg-gradient-to-r from-yellow-400 via-orange-500 to-pink-500 text-gray-900 px-5 py-2.5 rounded-full text-sm font-bold mb-6 shadow-2xl hover:shadow-yellow-500/50 transition-all duration-300 hover:scale-105">
+              <div className="inline-flex items-center gap-2 bg-gradient-to-r from-yellow-400 via-orange-500 to-pink-500 text-gray-900 px-6 py-3 rounded-full text-base font-bold mb-6 shadow-2xl hover:shadow-yellow-500/50 transition-all duration-300 hover:scale-105">
                 <span className="relative flex h-2.5 w-2.5">
                   <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-gray-900 opacity-75"></span>
                   <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-gray-900"></span>
@@ -42,7 +42,7 @@ export const Hero: React.FC = () => {
             )}
 
             {/* Main Heading */}
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
+            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6">
               Welcome to
               <span className="block bg-gradient-to-r from-yellow-400 via-orange-400 to-pink-400 bg-clip-text text-transparent mt-2">
                 {schoolConfig.name}
@@ -50,12 +50,12 @@ export const Hero: React.FC = () => {
             </h1>
 
             {/* Tagline */}
-            <p className="text-xl md:text-2xl text-yellow-100 mb-4 font-semibold">
+            <p className="text-2xl md:text-3xl text-yellow-100 mb-4 font-semibold">
               {schoolConfig.tagline}
             </p>
 
             {/* Description */}
-            <p className="text-lg text-purple-100 mb-8 leading-relaxed">
+            <p className="text-xl text-purple-100 mb-8 leading-relaxed">
               Providing quality {schoolConfig.affiliation} education in {schoolConfig.seo.location.locality}, 
               {schoolConfig.seo.location.city} since {schoolConfig.established}. 
               Building future leaders with values, knowledge, and character.

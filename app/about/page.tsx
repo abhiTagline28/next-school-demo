@@ -27,24 +27,24 @@ export default function AboutPage(): React.ReactElement {
       <section className="bg-gradient-to-br from-blue-900 to-blue-800 text-white py-16 md:py-24">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
+            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6">
               About {schoolConfig.name}
             </h1>
-            <p className="text-xl md:text-2xl text-blue-100">
+            <p className="text-2xl md:text-3xl text-blue-100">
               {schoolConfig.tagline}
             </p>
             <div className="mt-8 flex items-center justify-center gap-8 flex-wrap">
               <div>
-                <div className="text-3xl font-bold text-orange-400">
+                <div className="text-4xl font-bold text-orange-400">
                   {schoolConfig.established}
                 </div>
-                <div className="text-sm text-blue-200">Established</div>
+                <div className="text-base text-blue-200">Established</div>
               </div>
               <div>
-                <div className="text-3xl font-bold text-orange-400">
+                <div className="text-4xl font-bold text-orange-400">
                   {new Date().getFullYear() - schoolConfig.established}+
                 </div>
-                <div className="text-sm text-blue-200">Years of Excellence</div>
+                <div className="text-base text-blue-200">Years of Excellence</div>
               </div>
               <div>
                 <div className="text-3xl font-bold text-orange-400">
@@ -107,7 +107,7 @@ export default function AboutPage(): React.ReactElement {
                 variant="primary"
                 className="mx-auto mb-6"
               />
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">Our Mission</h3>
+              <h3 className="text-3xl font-bold text-gray-900 mb-4">Our Mission</h3>
               <p className="text-gray-700 leading-relaxed">
                 To provide quality education that empowers students with knowledge, skills, 
                 and values needed to excel in academics and become responsible citizens who 
@@ -218,7 +218,7 @@ export default function AboutPage(): React.ReactElement {
                   variant={index % 3 === 0 ? "primary" : index % 3 === 1 ? "secondary" : "success"}
                   className="mb-4"
                 />
-                <h3 className="text-xl font-bold text-gray-900 mb-3">
+                <h3 className="text-2xl font-bold text-gray-900 mb-3">
                   {item.title}
                 </h3>
                 <p className="text-gray-600">
@@ -265,7 +265,7 @@ export default function AboutPage(): React.ReactElement {
               <div className="md:col-span-2">
                 <Quote className="text-orange-400 mb-4" size={48} />
                 <div className="prose prose-lg max-w-none">
-                  <p className="text-gray-700 leading-relaxed text-lg">
+                  <p className="text-gray-700 leading-relaxed text-xl">
                     {schoolConfig.principal.message}
                   </p>
                 </div>
@@ -274,7 +274,7 @@ export default function AboutPage(): React.ReactElement {
                     <div className="h-1 w-20 bg-gradient-to-r from-blue-600 to-orange-500"></div>
                     <div>
                       <p className="font-bold text-gray-900">{schoolConfig.principal.name}</p>
-                      <p className="text-sm text-gray-600">Principal, {schoolConfig.name}</p>
+                      <p className="text-base text-gray-600">Principal, {schoolConfig.name}</p>
                     </div>
                   </div>
                 </div>
